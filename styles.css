@@ -15,7 +15,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
   padding-inline: 2rem;
 }
 
@@ -155,18 +154,37 @@ h1 {
   justify-items: center;
   row-gap: 3rem;
 }
+
 /* Sección párrafos */
 .main {
-    box-sizing: border-box;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
+  max-width: 1200px;
+  margin-inline: 5%;
+}
+
+.proyecto {
+  display: flex;
+  flex-direction: row;
+  margin: 42px;
+}
+
+.grid-contenedor {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.imagen-fija {
+  position: sticky;
+  top: 10px;
+  right: 0px;
+  z-index: 6;
+  height: 100vh;
 }
 
 .img-icon {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 /* Media Queries */
