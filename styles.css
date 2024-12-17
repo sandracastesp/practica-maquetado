@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --clr-white: rgb(255, 255, 255);
@@ -15,6 +15,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  line-height: 1.5;
   padding-inline: 2rem;
 }
 
@@ -159,19 +160,128 @@ h1 {
 .main {
   max-width: 1200px;
   margin-inline: 5%;
+  
+}
+
+.maquetado {
+  background-color: #F6F9FC;
 }
 
 .proyecto {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   margin: 42px;
 }
 
 .grid-contenedor {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-columns: 500px;
+  gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto;
   gap: 10px;
+  margin: 0px 64px 0px 0px;
+}
+
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5 {
+  display: grid;
+  grid-template-rows: auto;
+  line-height: normal;
+  gap: 15px;
+}
+
+h2 {
+  color: #7B68FE;
+  font-size: 1.125rem;
+}
+
+.img-icon {
+  margin: 30px 0px
+}
+
+article {
+  color: #3C4860;
+}
+
+h3, h4, h5 {
+  color: #0A2540;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.125rem;
+}
+
+.parrafo-principal {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #425466;
+  font-size: 1.15rem;
+}
+
+.enlaces {
+  background-color: #635BFF;
+    padding: 8px 14px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 190px;
+    margin-bottom: 50px;
+}
+
+.enlaces:hover {
+  cursor: default;
+  background-color: #0A2540;
+  transition: all .3s ease-out;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+h5 {
+  font-size: .875rem;
+   margin-bottom: 10px;
+}
+
+.lista-footer li {
+  color: #425466;
+  font-size: 0.9rem;
+  margin-top: 7px;
+  list-style: none;
+}
+
+span {
+  color: #635BFF;
+  font-weight: 650;
+}
+
+span:hover {
+  cursor: default;
+  color: #0A2540;
+  transition: all .3s ease-out;
 }
 
 .imagen-fija {
